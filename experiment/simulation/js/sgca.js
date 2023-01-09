@@ -455,6 +455,7 @@ function normalImg(x) {
 
 function displayData() {
   let tableHead = document.getElementById("thead2");
+  tableHead.classList.add("bold-text");
   let thead = tableHead.insertRow(0);
   for (let i = 0; i < header2.length; i++) {
     thead.insertCell(i).innerHTML = header2[i];
@@ -493,6 +494,7 @@ let interval = 600;
 let increment = 0;
 function generate_table() {
   let tableHead = document.getElementById("thead1");
+  tableHead.classList.add("bold-text");
   let thead = tableHead.insertRow(0);
   for (let i = 0; i < header1.length; i++) {
     thead.insertCell(i).innerHTML = header1[i];
@@ -516,7 +518,7 @@ function eachRow(rows, row) {
     rows.insertCell(i).innerHTML = row[i];
   }
   document.getElementById("file").value = step;
-  step += Math.floor(100 / data.length) + 1;
+  step += Math.floor(100 / data.length + 2);
 }
 
 function showNextButton(visibility) {
