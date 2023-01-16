@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+
+	<title>SOLVE</title>
+	<link rel="stylesheet" href="css/sgca.css" />
+	<script type="text/javascript" src="js/jquerymin.js"></script>
+
+	<script>
+		var simsubscreennum = 0;
+		var temp = 0;
+		var lnt = 0;
+		var n;
+	</script>
+</head>
+
+<body style="margin:0; font-family:verdana, sans-serif; font-size:14px;">
+	<!--Simulation Screen start		-->
+	<div id="simscreen">
+		<!--Title of Simulation		-->
+		<div id="title">
+			<h3>Geo-resistivity test for bedrock identification
+</h3>
+		</div>
+		<!--SubScreen Home	-->
+		<div class="simsubscreen" id="canvas0">
+			<h4 class="incanvas" style="font-family:verdana, sans-serif;">Objective:</h4>
+			<p class="incanvas" style="font-family:verdana, sans-serif; font-size:15px;">To obtain the resistivity of the ground with the help of Georesistivity meter.</p></br>
+			<h4 class="incanvas" style="font-family:verdana, sans-serif; ">Apparatus used:</h4>
+			<p class="incanvas" style="font-family:verdana, sans-serif; font-size:14px;">Georesistivity meter, Clips and wire,
+				Battery, Electrodes and Hammer.</p>
+			<span class="tooltip"
+				style="border-bottom:1px dotted ; color:red; position:absolute; left:5px;top:140px;"><strong>Description</strong>
+				<span class="tooltiptext" style="text-align:justify;left:90px;top:6px;"><strong
+						style="color:red;">Georesistivity Test:</strong> The electrical resistivity test is
+					useful for studying the existence of subsurface structures by observing the differences in
+					their resistance to electrical current flow and hence determining the presence of
+					groundwater.</span></span>
+			<img id="" style="position: absolute;left: 232px;top: 277px;width: 458px;height: 229px;" title="table" src="images/table.png" alt="">
+			<img id="" style="position: absolute;left: 291px;top: 231px;width: 58px;height:130px;transform: rotate(90deg);" title="Electrode" src="images/pin1.png" alt="">
+			<img id="" title="Resistivity Meter" style="position: absolute;left: 391px;top: 245px;max-width: 19%;" src="images/rs1.png" alt="">
+			<img title="Battery" style="position: absolute;width: 151px;left: 523px;top: 185px;transform: rotateY(-14deg);" src="images/Battery2.png" alt="">
+			<img style="position:absolute; left:20px; top:160px;" title="" src="images/human.png" alt=""/>
+		</div>
+
+		<!--Step1	-->
+		<div class="simsubscreen" id="canvas1" style="display:none">
+			<strong id="titlestep" class="incanvas">STEP </strong>
+			<span class="circlebg" id="stepnumber">&nbsp;1&nbsp;</span>
+			<p id="pumptext" class="steptext" style="font-family:verdana, sans-serif; font-size:14px;">Connect the potential electrode to current.</p>
+			<div style="position:absolute;left:25px;top:-40px;">
+				<p id="x" style="position: absolute;left:650px;top:-15px;font-size:18px;display:none;">
+					<strong>Trial
+						1</strong>
+				</p>
+				<img id="z6" style="position: absolute;width:635px; height:109px;left: 20px; top: 103px;"
+					src="images/soil31.jpg" alt="">
+				<img id="a6" title="Electrode" style="position: absolute;width:50px; left: 385px; top: 129px;" src="images/pin11.png" alt="">
+
+				
+				<img id="z7" style="position: absolute;width:780px; height:275px;left: -63px; top: 212px;"
+					src="images/soil3.jpg" alt="">
+					<p id="Source"
+					style="position: absolute;top: 440px;left: 10px;color:white;width:400px;font-size:13px;">
+				Source:NITK, Surathkal <br>Campus</p>
+				<p id="font"
+					style="position: absolute;top: 450px;left: 600px;color:white;width:200px;font-size:13px;">
+					Isometric View</p>
+				<img id="a23" style="position: absolute;left: 382px; width:23px;top: 183px;transform-origin: -30% 63%;transform:rotate(15deg);" src="images/wire2.svg"  alt="">
+				<img id="csoil" style="position: absolute;left: 10px; width:auto;top: 300px;display:none;"
+					width="145" height="145" onmouseover="bigImg(this)" onmouseout="normalImg(this)"
+					src="images/csoil.png" alt="" />
+				<img id="csoil1"
+					style="position: absolute;left: 10px; width:auto;top: 300px;display:none;"
+					width="145" height="145" onmouseover="bigImg(this)" onmouseout="normalImg(this)"
+					src="images/csoil1.png" alt="" />
+				<img id="a32" style="position: absolute;left: 384px; width:20px;top: 188px;transform-origin: -30% 63%;transform:rotate(26deg);display:none;" src="images/wire2.svg" alt="">
+				<img id="a2" title="Resistivity Meter"
+					style="position: absolute; width:180px;left: 230px; top: 300px;" src="images/rs11.png" alt="" />
+				<img id="a22" style="position: absolute;width:120px;left: 269px; top: 230.5px;transform:rotate(-10deg)" src="images/wire1.svg" alt="">
+				<img id="a5" title="Hammer"
+					style="position: absolute;width:75px; left: 356px; top: 107px;transform:rotate(-5deg);"
+					src="images/hammer11.png" alt="" />
+				<img id="sw1" title="Resistivity Meter"
+					style="position: absolute; width: 4px; left: 364px; top: 335px;transform:rotate(-25deg); "
+					src="images/switch.svg"  alt="">
+			</div>
+		</div>
+
+		<div class="simsubscreen" id="canvas2" style="display:none">
+			<strong id="titlestep" class="incanvas">STEP </strong>
+			<span class="circlebg" id="stepnumber">&nbsp;2&nbsp;</span>
+			<p id="pumptext" class="steptext" style="font-family:verdana, sans-serif;; font-size:14px;">Connect the potential electrode to the negative side of the resistivity meter.</p>
+			<div style="position:absolute;left:25px;top:-40px;">
+				<img id="z6" style="position: absolute;width:635px; height:109px;left: 20px; top: 103px;"
+					src="images/soil31.jpg"  alt="">
+				<img id="a6" title="Electrode" style="position: absolute;width:50px; left: 385px; top: 140px;" src="images/pin11.png"  alt="">
+				<img id="b6" title="Electrode" style="position: absolute;width:50px; left: 200px; top: 128px;" src="images/pin11.png" alt="">
+	
+				<img id="z7" style="position: absolute;width:780px; height:275px;left: -63px; top: 212px;"
+					src="images/soil3.jpg" alt="">
+					<p id="Source"
+					style="position: absolute;top: 440px;left: 10px;color:white;width:400px;font-size:13px;">
+				Source:NITK, Surathkal <br>Campus</p>
+				<p id="font"
+					style="position: absolute;top: 450px;left: 600px;color:white;width:200px;font-size:13px;">
+					Isometric View</p>
+				<img id="a32" style="position: absolute;left: 384px; width:20px;top: 188px;transform-origin: -30% 63%;transform:rotate(26deg);" src="images/wire2.svg" alt="">
+				<img id="a2" title="Resistivity Meter"
+					style="position: absolute; width:180px;left: 230px; top: 300px;" src="images/rs11.png" alt="" />
+				<img id="a22" style="position: absolute;width:120px;left: 269px; top: 230.5px;transform:rotate(-10deg)" src="images/wire1.svg" alt="">
+				<img id="b24" style="position: absolute;left: 198px; width:25px;top: 188px;transform-origin: -20% 87%;transform:rotate(4deg)" src="images/wire2.svg" alt="">
+				<img id="b42" style="position: absolute; left: 199px; width: 20px; top: 195px; transform-origin: -20% 87%; transform: rotate(15deg);display:none;" src="images/wire2.svg"  alt="">
+				<img id="b25" style="position: absolute;left: 190px; width:80px;top: 235px;transform:rotate(11deg);" src="images/wire3.svg"  alt="">
+				<img id="b5" title="Hammer"
+					style="position: absolute;width:75px; left: 172px; top: 107px;transform:rotate(-5deg);display:none;"
+					src="images/hammer11.png"  alt=""/>
+		
+				<img id="sw1" title="Resistivity Meter"
+					style="position: absolute; width: 4px; left: 364px; top: 335px;transform:rotate(-25deg); "
+					src="images/switch.svg" alt="" />
+				<img id="csoil2"
+					style="position: absolute;left: 10px; width:auto;top: 300px;display:none;"
+					width="145" height="145" onmouseover="bigImg(this)" onmouseout="normalImg(this)"
+					src="images/csoil1.png"  alt=""/>
+				<img id="csoil3"
+					style="position: absolute;left: 10px; width:auto;top: 300px;display:none;"
+					width="145" height="145" onmouseover="bigImg(this)" onmouseout="normalImg(this)"
+					src="images/csoil2.png"  alt=""/>
+			</div>
+		</div>
+
+		<div class="simsubscreen" id="canvas3" style="display:none">
+			<strong id="titlestep" class="incanvas">STEP </strong>
+			<span class="circlebg" id="stepnumber">&nbsp;3&nbsp;</span>
+			<p id="pumptext" class="steptext" style="font-family:verdana, sans-serif; font-size:14px;">Connect the potential electrode to the positive side of the resistivity meter.</p>
+			<div style="position:absolute;left:25px;top:-40px;">
+				<img id="z6" style="position: absolute;width:635px; height:109px;left: 20px; top: 103px;"
+					src="images/soil31.jpg" alt="">
+				<img id="b7" title="Electrode" style="position: absolute;width:50px; left: 200px; top: 140px;" src="images/pin11.png" alt="">
+				<img id="a6" title="Electrode" style="position: absolute;width:50px; left: 385px; top: 140px;" src="images/pin11.png" alt="">
+				<img id="c6" title="Electrode"
+					style="position: absolute; width: 50px; left: 549px; top: 130px;display:none;"
+					src="images/pin11.png" alt="">
+				
+				<img id="z7" style="position: absolute;width:780px; height:275px;left: -63px; top: 212px;"
+					src="images/soil3.jpg" alt="">
+					<p id="Source"
+					style="position: absolute;top: 440px;left: 10px;color:white;width:400px;font-size:13px;">
+				Source:NITK, Surathkal <br>Campus</p>
+				<p id="font"
+					style="position: absolute;top: 450px;left: 600px;color:white;width:200px;font-size:13px;">
+					Isometric View</p>
+				<img id="a2" title="Resistivity Meter"
+					style="position: absolute; width:180px;left: 230px; top: 300px;" src="images/rs11.png" alt="" />
+				<img id="d23" style="position: absolute;left: 371px; width:181.5px;top: 230px;"
+					src="images/wire4.svg" alt="">
+					<img id="a32" style="position: absolute;left: 384px; width:20px;top: 188px;transform-origin: -30% 63%;transform:rotate(26deg);" src="images/wire2.svg" alt="">
+				<img id="c23"
+					style="position: absolute; left: 550px; width: 25px; top: 190px; transform-origin: -18% 87%;"
+					src="images/wire22.svg" alt="">
+				<img id="c32"
+					style="position: absolute; left: 550px; width: 21px; top: 197px; transform-origin: -18% 87%; transform: rotate(8deg); display:none"
+					src="images/wire22.svg" alt="">
+				<img id="b25" style="position: absolute;left: 190px; width:80px;top: 235px;transform:rotate(11deg);" src="images/wire3.svg" alt="">
+				<img id="b42" style="position: absolute; left: 199px; width: 20px; top: 195px; transform-origin: -20% 87%; transform: rotate(15deg);" src="images/wire2.svg" alt="">
+				<img id="a22" style="position: absolute;width:120px;left: 269px; top: 230.5px;transform:rotate(-10deg)" src="images/wire1.svg" alt="">				<img id="c5" title="Hammer"
+					style="position: absolute;width:75px; left: 522px; top: 107px;transform:rotate(-5deg);display:none;"
+					src="images/hammer11.png" alt="" />
+				<img id="c55" title="Hammer"
+					style="position: absolute;width:75px; left: 522px; top: 107px;transform:rotate(-5deg);display:none;"
+					src="images/hammer11.png" alt="" />
+				<img id="c555" title="Hammer"
+					style="position: absolute;width:75px; left: 522px; top: 107px;transform:rotate(-5deg);display:none;"
+					src="images/hammer11.png" alt="" />
+				<img id="sw1" title="Resistivity Meter"
+					style="position: absolute; width: 4px; left: 364px; top: 335px;transform:rotate(-25deg); "
+					src="images/switch.svg" alt="">
+				<img id="csoil4"
+					style="position: absolute;left: 10px; width:auto;top: 300px;display:none;"
+					width="145" height="145" onmouseover="bigImg(this)" onmouseout="normalImg(this)"
+					src="images/csoil2.png" alt="" />
+				<img id="csoil5"
+					style="position: absolute;left: 10px; width:auto;top: 300px;display:none;"
+					width="145" height="145" onmouseover="bigImg(this)" onmouseout="normalImg(this)"
+					src="images/csoil3.png" alt="" />
+			</div>
+		</div>
+
+		<div class="simsubscreen" id="canvas4" style="display:none">
+			<strong id="titlestep" class="incanvas">STEP </strong>
+			<span class="circlebg" id="stepnumber">&nbsp;4&nbsp;</span>
+			<p id="pumptext" class="steptext" style="font-family:verdana, sans-serif; font-size:14px;">Connect the potential electrode to the negative side of the resistivity meter.</p>
+			<div style="position:absolute;left:25px;top:-40px;">
+				<img id="z6" style="position: absolute;width:635px; height:109px;left: 20px; top: 103px;"
+					src="images/soil31.jpg" alt="">
+				<img id="a6" title="Electrode" style="position: absolute;width:50px; left: 385px; top: 140px;" src="images/pin11.png" alt="">
+				<img id="b7" title="Electrode" style="position: absolute;width:50px; left: 200px; top: 140px;" src="images/pin11.png" alt="">
+				<img id="c7" title="Electrode" style="position: absolute;width:50px; left: 550px; top: 140px;"
+					src="images/pin11.png"  alt=""/>
+				<img id="d6" title="Electrode"
+					style="position: absolute;width:50px; left: 30px; top: 130px;display:none;"
+					src="images/pin11.png" alt="" />
+				
+				<img id="z7" style="position: absolute;width:780px; height:275px;left: -63px; top: 212px;"
+					src="images/soil3.jpg" alt=""/>
+					<p id="Source"
+					style="position: absolute;top: 440px;left: 10px;color:white;width:400px;font-size:13px;">
+				Source:NITK, Surathkal <br>Campus</p>
+				<p id="font"
+					style="position: absolute;top: 450px;left: 600px;color:white;width:200px;font-size:13px;">
+					Isometric View</p>
+
+				<img id="a2" title="Resistivity Meter"
+					style="position: absolute; width:180px;left: 230px; top: 300px;" src="images/rs11.png"  alt=""/>
+				<img id="c32"
+					style="position: absolute; left: 550px; width: 21px; top: 197px; transform-origin: -18% 87%; transform: rotate(8deg);"
+					src="images/wire22.svg" alt=""/>
+				<img id="c21"
+					style="position: absolute; left:28px; width: 25px; top: 184px; transform-origin: -18% 87%; transform: rotate(8deg);"
+					src="images/wire22.svg"  alt=""/>
+				<img id="c12"
+					style="position: absolute; left: 28px; width: 20px; top: 193px; transform-origin: -18% 87%; transform: rotate(16deg); display:none;"
+					src="images/wire22.svg"  alt=""/>
+				<img id="b42" style="position: absolute; left: 199px; width: 20px; top: 195px; transform-origin: -20% 87%; transform: rotate(15deg);" src="images/wire2.svg" alt=""/>
+				<img id="a32" style="position: absolute;left: 384px; width:20px;top: 188px;transform-origin: -30% 63%;transform:rotate(26deg);" src="images/wire2.svg"  alt=""/>
+				<img id="a22" style="position: absolute;width:120px;left: 269px; top: 230.5px;transform:rotate(-10deg)" src="images/wire1.svg"  alt=""/>
+				<img id="d5"
+					style="position: absolute;width:75px; left:1px; top: 107px;transform:rotate(-5deg);display:none;"
+					src="images/hammer11.png"  alt="" />
+				<img id="b25" style="position: absolute;left: 190px; width:80px;top: 235px;transform:rotate(11deg);" src="images/wire3.svg" alt=""/>
+				<img id="d27" style="position: absolute;left: 371px; width:181.5px;top: 230px;"
+					src="images/wire4.svg" alt=""/>
+				<img id="d29" style="position: absolute;left: 25px; width:333px;top: 226px;"
+					src="images/wire5.svg" alt=""/>
+				<img id="sw1" title="Resistivity Meter"
+					style="position: absolute; width: 4px; left: 364px; top: 335px;transform:rotate(-25deg); "
+					src="images/switch.svg"  alt=""/>
+				<img id="csoil6"
+					style="position: absolute;left: 10px; width:auto;top: 300px;display:none;"
+					width="145" height="145" onmouseover="bigImg(this)" onmouseout="normalImg(this)"
+					src="images/csoil3.png"  alt=""/>
+				<img id="csoil7"
+					style="position: absolute;left: 10px; width:auto;top: 300px;display:none;"
+					width="145" height="145" onmouseover="bigImg(this)" onmouseout="normalImg(this)"
+					src="images/csoil4.png"  alt=""/>
+			</div>
+		</div>
+		<div class="simsubscreen" id="canvas5" style="display:none">
+			<strong id="titlestep" class="incanvas">STEP </strong>
+			<span class="circlebg" id="stepnumber">&nbsp;5&nbsp;</span>
+			<p id="pumptext" class="steptext" style="font-family:verdana, sans-serif; font-size:14px;">Connect the resistivity meter to battery.</p>
+			<div id="can5" style="position:absolute;left:25px;top:-70px;">
+				<div id="font" style="position: absolute;bottom: 8px;left: 16px;color:white;">Bottom Left</div>
+				<img id="z6" style="position: absolute;width:635px; height:109px;left: 20px; top: 103px;"
+					src="images/soil31.jpg" alt="" >
+				<img id="a6" title="Electrode" style="position: absolute;width:50px; left: 385px; top: 140px;" src="images/pin11.png" alt=""/>
+				<img id="b7" title="Electrode" style="position: absolute;width:50px; left: 200px; top: 140px;" src="images/pin11.png"  alt=""/>
+				<img id="c7" title="Electrode" style="position: absolute;width:50px; left: 550px; top: 140px;"
+					src="images/pin11.png"  alt=""/>
+				<img id="d7" title="Electrode" style="position: absolute;width:50px; left: 30px; top: 140px;"
+					src="images/pin11.png"  alt=""/>
+				<img id="z7" style="position: absolute;width:780px; height:275px;left: -63px; top: 212px;"
+					src="images/soil3.jpg"  alt=""/>
+				<p id="font"
+					style="position: absolute;top: 450px;left: 600px;color:white;width:200px;font-size:13px;">
+					Isometric View</p>
+				<!-- <p id="font23"
+					style="position: absolute;top: 290px;left: 22px;color:white;width:200px;font-size:13px;display:none;">
+					Processing data</p> -->
+				<p id="to" style="position:absolute;left:22px;top:310px;font-size:18px;color:#00ff00"></p>
+				<!-- <span id="to1" style="height: 8px;width: 8px;background-color: white;border-radius: 50%;
+				display: inline-block;" ></span> -->
+
+				<img id="a2" title="Resistivity Meter"
+					style="position: absolute; width:180px;left: 230px; top: 300px;" src="images/rs11.png" alt="" />
+				<img id="sw11" title="Resistivity Meter"
+					style="position: absolute; width: 4px; left: 364px; top: 335px;transform:rotate(-25deg);display:none; "
+					src="images/switch.svg" alt=""/>
+				<img id="sw12" title="Resistivity Meter"
+					style="position: absolute; width: 4px; left: 364.5px; top: 335px;transform:rotate(25deg);display:none; "
+					src="images/switch.svg"  alt=""/>
+				<span id="v1" style="font-size:11px;position: absolute;top:316px;left:301px;"></span>
+				<span id="v2" style="font-size:11px;position: absolute;top:316px;left:301px;"></span>
+				<span id="v3" style="font-size:11px;position: absolute;top:316px;left:301px;"></span>
+
+				<img id="c32"
+					style="position: absolute; left: 550px; width: 21px; top: 197px; transform-origin: -18% 87%; transform: rotate(8deg); "
+					src="images/wire22.svg" alt=""/>
+				<img id="c12"
+					style="position: absolute; left: 28px; width: 20px; top: 193px; transform-origin: -18% 87%; transform: rotate(16deg);"
+					src="images/wire22.svg"  alt=""/>
+				<img id="b42" style="position: absolute; left: 199px; width: 20px; top: 195px; transform-origin: -20% 87%; transform: rotate(15deg);" src="images/wire2.svg" alt=""/>
+				<img id="a32" style="position: absolute;left: 384px; width:20px;top: 188px;transform-origin: -30% 63%;transform:rotate(26deg);" src="images/wire2.svg"  alt=""/>
+				<img id="a22" style="position: absolute;width:120px;left: 269px; top: 230.5px;transform:rotate(-10deg)" src="images/wire1.svg"  alt=""/>
+				<img id="b25" style="position: absolute;left: 190px; width:80px;top: 235px;transform:rotate(11deg);" src="images/wire3.svg"  alt=""/>
+				<img id="d27" style="position: absolute;left: 371px; width:181.5px;top: 230px;"
+					src="images/wire4.svg"  alt=""/>
+				<img id="d29" style="position: absolute;left: 25px; width:333px;top: 226px;"
+					src="images/wire5.svg"  alt=""/>
+				<img id="d6" style="position: absolute;width:76.5px; left: 457px; top: 401px;"
+					src="images/bwire1.svg"  alt=""/>
+				<img id="a6" title="Battery" style="position: absolute;width:180px; left: 455px; top: 280px;"
+					src="images/Battery2.png"  alt="" />
+				<img id="a7"
+					style="position: absolute;width:120px; left: 350px; top: 382px;transform-origin: -50% 30%;display:none;"
+					src="images/pwire.svg"  alt=""/>
+				<img id="a8" style="position: absolute;width:45px; left: 290px; top: 420px;display:none;"
+					src="images/hand1.png"  alt=""/>
+				<img id="e8" style="position: absolute;width:45px; left: 290px; top: 420px;display:none;"
+					src="images/hand1.png"  alt=""/>
+			
+				
+				<img id="a9" style="position: absolute;width:107px; left: 364px; top: 319px;display:none;"
+					src="images/pwire1.svg"  alt="" />
+				<div id="tab22-1">
+					<table id="tab2-1" border=1
+						style="text-align:center;border-collapse: collapse;font-size:14px;">
+						<thead id="thead1">
+							<!-- <tr>
+								<th id="" style="padding:10px;">NO</th>
+								<th id="" style="padding:10px;">AB/2(m)</th>
+								<th id="" style="padding:10px;">MN/2(m)</th>
+								<th id="" style="padding:10px;">V(v)</th>
+								<th id="" style="padding:10px;">I(A)</th>
+								<th id="" style="padding:10px;">R(ohm)</th>
+								<th id="" style="padding: 10px;">K(m)</th>
+							</tr> -->
+						</thead>
+						<tbody id="tab2-body"></tbody>
+					</table>
+				</div>
+				<div id="progressBar" style="position: absolute;top: 417px;left: -5px;color:#e7e0e0;display:none;">
+					<label for="file" id="progress-label">Processing Data:</label>
+					<progress id="file" value="0" max="100"> 32% </progress>
+				</div>
+			</div>
+		</div>
+		<div class="simsubscreen" id="canvas6" style="display:none;">
+			<strong class="incanvas" >
+				<h3 id="ob">Observations: </h3>
+			</strong>
+			<div id="evaluateTable">
+				<table id="table2" >
+					<thead id="thead2">
+						<!-- <tr>
+							<th id="" style="padding:10px;">NO</th>
+							<th id="" style="padding:10px;">AB/2(m)</th>
+							<th id="" style="padding:10px;">MN/2(m)</th>
+							<th id="" style="padding:10px;">V(v)</th>
+							<th id="" style="padding:10px;">I(A)</th>
+							<th id="" style="padding:10px;">R(ohm)</th>
+							<th id="" style="padding: 10px;">K(m)</th>
+							<th id="" style="padding:10px;width:90px">KR(ohm-m)</th>
+						</tr> -->
+					</thead>
+					<tbody id="table2-body">
+
+					</tbody>
+			</table>
+		</div>
+		<div id="div1" style="display:none;position: absolute;top:480px;" class="input">
+				<div style="position:relative">
+					<label for="average-resistivity">Mean Resistivity = </label>
+				<input type="text" name="" class="average-resistivity" id="average-resistivity">
+				<span id="ohm">Ω-m</span>
+				<span id="cwspan"></span>
+				<button id="calculate-average">CHECK</button>
+				<span class="formula-open-arrow"></span>
+				<span class="formula-open">KR / Total</span>
+				</div>
+				
+			</div>
+		</div>
+
+
+		<div class="simsubscreen" id="canvas7" style="display:none;">
+			<strong class="incanvas" id="ob">
+				<h3>Result: </h3>
+			</strong>
+			<p id="meanResult" style="position:absolute;left:234px;top:36px;">Mean Resistivity = 2321 &ohm;</p>
+			<div id="select-div">
+				<label for="selectSample" style="font-size:14px;position:absolute;top:80px;">1. From the IS 15736 code, the apparent resistivity falls in the range of
+					<select name="type" id="selectSample">
+						<option value=''></option>
+						<option value='alluvium'>Alluvium</option>
+						<option value='basalt'>Basalt</option>
+						<option value='shale'>Shale</option>
+					</select>
+					<span id="ans-eval"></span>
+					<button id="identify-soil">CHECK</button>
+				</label>
+			</div>
+			<p id="soilResult" style="position: absolute;left:75px;top:80px;opacity:0;transition:opacity 0.3s;"></p>
+			<p id="trialNote" class="trial-statement-init">Repeat the steps for next trials</p>
+			<p class="inference-init">Based on the type of the soil , the type of structure and accordingly type of foundation can be decided.</p>
+			
+		</div>
+
+
+		<div class="pop-up">
+			<label for="formative">The MN indicates 
+					<select name="type" id="formative">
+						<option value=''></option>
+						<option value='Current Electrode'>Current electrode</option>
+						<option value='Potential Electrode'> Potential electrode
+						</option>
+					</select>
+				</label>
+				<span id="formativeSpan"></span>
+				<p id="formAns"></p>
+		</div>
+
+		<div class="pop-up">
+			<label for="formative1">The positive terminal of the battery is known as  
+					<select name="type" id="formative1">
+						<option value=''></option>
+						<option value='Anode'>Anode</option>
+						<option value='Cathode'>Cathode</option>
+						<option value='Electrode'>Electrode</option>
+						<option value='none'>None of these</option>
+					</select>
+				</label>
+				<span id="formativeSpan1"></span>
+				<p id="formAns1"></p>
+		</div>
+
+		<div class="pop-up">
+			<label for="formative2">In the Schlumberger array, the electrodes are placed at equal distances? 
+					<select name="type" id="formative2">
+						<option value=''></option>
+						<option value='True'>True</option>
+						<option value='False'>False
+						</option>
+					</select>
+				</label>
+				<span id="formativeSpan2"></span>
+				<p id="formAns2"></p>
+		</div>
+
+			<p id="trial"
+				style="text-transform: uppercase;display:none;font-weight: bold;font-family:verdana, sans-serif;position: absolute;left:700px;top:45px ">
+				<strong>Trial = </strong>
+			</p>
+
+		<!--next  Arrow	-->
+		<div id="nav">
+			<img id="nextButton" onclick="navNext(); " src="images/Next.png"  alt="" />
+		</div>
+
+		<!--Blinking Arrow	-->
+		<img class="" id="arrow1" style="display:none" src="images/arrow1.png" alt="" />
+
+		<div id="copyright"> &copy; 2020 - <script>document.write(new Date().getFullYear())</script> SOLVE - The Virtual Lab @ NITK Surathkal, Department of Water Resources & Ocean Engineering</div>
+<script src="../assets/js/iframeResize.js"></script></body>
+	<script type="text/javascript" src="js/sgca.js"></script>
+
+</html>
