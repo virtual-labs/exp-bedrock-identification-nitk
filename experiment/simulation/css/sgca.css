@@ -149,41 +149,27 @@
 th {
   font-weight: 700;
 }
-thead{
-  font-weight: 700;
-}
-#tab2-1 th,
-#tab2-1 td,
+
 #table2 th,
 #table2 td {
   border: 1px solid #8c8989;
   padding: 3px;
+
 }
 #table2 td{
     font-weight: 500;
-}
 
-#table2 tr td:last-child{ /* last-child returns the last instance of the td */
-   width:150px;
-   /* additional styles as required */
- }
-
-.bold-text{
-  font-weight: 700;
 }
 
 .end {
   position: absolute;
   bottom: -10%;
-  right: 3%;
+  right: 15%;
 }
 
-
 .tableInput {
-      width: 50%;
-    text-align: center;
-    display: inline-block;
-    margin: 0px;
+  width: 40%;
+  text-align: center;
 }
 /* input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -233,9 +219,9 @@ button {
   top: -5px;
 }
 /* Firefox */
-/* input[type="number"] {
+input[type="number"] {
   -moz-appearance: textfield;
-} */
+}
 
 .tooltip {
   position: initial;
@@ -341,17 +327,35 @@ options {
 }
 
 .pop-up{
-  position: absolute;
-  left:250px;
-  top:504px;
-  background-color: #171717ab;
-  padding: 4px 8px;
-  color:rgb(255, 254, 254);
-  border-radius: 5px;
-  display: none;
+ position: absolute;
+    left: 50%;
+    bottom: 7%;
+    background-color: #150202cc;
+    padding: 4px 8px;
+    color: rgb(255, 254, 254);
+    border-radius: 5px;
+    display: none;
+    word-wrap: break-word;
+    margin: 0 auto;
+    transform: translateX(-50%);
 }
 .pop-up-height{
   height: 64px;
+      bottom: 4%;
+
+}
+
+#tab22-1{
+  display:none; 
+  position:absolute; 
+  left:80px; 
+  top:500px; 
+  overflow:auto; 
+  font-size:12px; 
+  text-align:center;
+  align-items:center;
+  justify-content:center;
+  height:79px;
 }
 @-webkit-keyframes mover {
   0% {

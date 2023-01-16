@@ -92,8 +92,7 @@
 		<div class="simsubscreen" id="canvas2" style="display:none">
 			<strong id="titlestep" class="incanvas">STEP </strong>
 			<span class="circlebg" id="stepnumber">&nbsp;2&nbsp;</span>
-			<p id="pumptext" class="steptext" style="font-family:verdana, sans-serif;; font-size:14px;">Connect the potential
-				electrode to the negative side of the resistivity meter.</p>
+			<p id="pumptext" class="steptext" style="font-family:verdana, sans-serif;; font-size:14px;">Connect the potential electrode to the negative side of the resistivity meter.</p>
 			<div style="position:absolute;left:25px;top:-40px;">
 				<img id="z6" style="position: absolute;width:635px; height:109px;left: 20px; top: 103px;"
 					src="images/soil31.jpg"  alt="">
@@ -136,7 +135,7 @@
 		<div class="simsubscreen" id="canvas3" style="display:none">
 			<strong id="titlestep" class="incanvas">STEP </strong>
 			<span class="circlebg" id="stepnumber">&nbsp;3&nbsp;</span>
-			<p id="pumptext" class="steptext" style="font-family:verdana, sans-serif; font-size:14px;">Connect the current electrode to the positive side of the resistivity meter.</p>
+			<p id="pumptext" class="steptext" style="font-family:verdana, sans-serif; font-size:14px;">Connect the potential electrode to the positive side of the resistivity meter.</p>
 			<div style="position:absolute;left:25px;top:-40px;">
 				<img id="z6" style="position: absolute;width:635px; height:109px;left: 20px; top: 103px;"
 					src="images/soil31.jpg" alt="">
@@ -193,7 +192,7 @@
 		<div class="simsubscreen" id="canvas4" style="display:none">
 			<strong id="titlestep" class="incanvas">STEP </strong>
 			<span class="circlebg" id="stepnumber">&nbsp;4&nbsp;</span>
-			<p id="pumptext" class="steptext" style="font-family:verdana, sans-serif; font-size:14px;">Connect the current electrode to the negative side of the resistivity meter.</p>
+			<p id="pumptext" class="steptext" style="font-family:verdana, sans-serif; font-size:14px;">Connect the potential electrode to the negative side of the resistivity meter.</p>
 			<div style="position:absolute;left:25px;top:-40px;">
 				<img id="z6" style="position: absolute;width:635px; height:109px;left: 20px; top: 103px;"
 					src="images/soil31.jpg" alt="">
@@ -316,8 +315,7 @@
 				
 				<img id="a9" style="position: absolute;width:107px; left: 364px; top: 319px;display:none;"
 					src="images/pwire1.svg"  alt="" />
-				<div id="tab22-1"
-					style="display:none; position:absolute; left:80px; top:500px; overflow:auto; font-size:12px; text-align:center;align-items:center;justify-content:center;height:79px;">
+				<div id="tab22-1">
 					<table id="tab2-1" border=1
 						style="text-align:center;border-collapse: collapse;font-size:14px;">
 						<thead id="thead1">
@@ -367,7 +365,7 @@
 				<div style="position:relative">
 					<label for="average-resistivity">Mean Resistivity = </label>
 				<input type="text" name="" class="average-resistivity" id="average-resistivity">
-				<span id="ohm">Ω</span>
+				<span id="ohm">Ω-m</span>
 				<span id="cwspan"></span>
 				<button id="calculate-average">CHECK</button>
 				<span class="formula-open-arrow"></span>
@@ -406,13 +404,40 @@
 			<label for="formative">The MN indicates 
 					<select name="type" id="formative">
 						<option value=''></option>
-						<option value='ce'>Current electrode</option>
-						<option value='pe'> Potential electrode
+						<option value='Current Electrode'>Current electrode</option>
+						<option value='Potential Electrode'> Potential electrode
 						</option>
 					</select>
 				</label>
 				<span id="formativeSpan"></span>
 				<p id="formAns"></p>
+		</div>
+
+		<div class="pop-up">
+			<label for="formative1">The positive terminal of the battery is known as  
+					<select name="type" id="formative1">
+						<option value=''></option>
+						<option value='Anode'>Anode</option>
+						<option value='Cathode'>Cathode</option>
+						<option value='Electrode'>Electrode</option>
+						<option value='none'>None of these</option>
+					</select>
+				</label>
+				<span id="formativeSpan1"></span>
+				<p id="formAns1"></p>
+		</div>
+
+		<div class="pop-up">
+			<label for="formative2">In the Schlumberger array, the electrodes are placed at equal distances? 
+					<select name="type" id="formative2">
+						<option value=''></option>
+						<option value='True'>True</option>
+						<option value='False'>False
+						</option>
+					</select>
+				</label>
+				<span id="formativeSpan2"></span>
+				<p id="formAns2"></p>
 		</div>
 
 			<p id="trial"
