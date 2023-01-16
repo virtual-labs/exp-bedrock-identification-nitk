@@ -27,8 +27,8 @@ let questions = [
 ];
 
 let options2 = [
-  ["Anode", "Cathode ", "Electrode", "None of these"], //Two
-  ["True", "False"], //Meter of air
+  ["Anode", "Cathode ", "Electrode", "None of these"], //anode
+  ["True", "False"], //false
 ];
 
 let headers1 = [
@@ -108,27 +108,55 @@ function displayTooltip() {
 
 let popup = document.querySelector(".pop-up");
 let formative = document.getElementById("formative");
+let formative1 = document.getElementById("formative1");
+let formative2 = document.getElementById("formative2");
 formative.addEventListener("click", selectFormative);
+formative1.addEventListener("click", selectFormative);
+formative2.addEventListener("click", selectFormative);
 formative.addEventListener("change", evalFormative);
+formative1.addEventListener("change", evalFormative);
+formative2.addEventListener("change", evalFormative);
 function selectFormative() {
   popup.classList.toggle("pop-up-height");
 }
-function evalFormative() {
-  let formativeSpan = document.getElementById("formativeSpan");
-  let ans = formative.value;
-  if (ans == "pe") {
+function evalFormative(ev) {
+  let formId = ev.target.id;
+  console.log(formId);
+  let formAnsCheck, formativeSpan, userInput, ans, correctAnsSpan;
+  if (formId == "formative") {
+    formativeSpan = document.getElementById("formativeSpan");
+    correctAnsSpan = document.getElementById("formAns");
+    userInput = formative.value;
+    ans = "Potential Electrode";
+  } else if (formId == "formative1") {
+    formativeSpan = document.getElementById("formativeSpan1");
+    correctAnsSpan = document.getElementById("formAns1");
+    userInput = formative1.value;
+    ans = "Anode";
+  } else if (formId == "formative2") {
+    formativeSpan = document.getElementById("formativeSpan2");
+    correctAnsSpan = document.getElementById("formAns2");
+    userInput = formative2.value;
+    ans = "False";
+  }
+  if (userInput == ans) {
     formativeSpan.innerHTML = "✔";
     formativeSpan.classList.remove("wrongSpan");
     formativeSpan.classList.add("correctSpan");
-    document.getElementById("formAns").innerHTML = "";
-    document.getElementById("nextButton").style.display = "block";
+    correctAnsSpan.innerHTML = "";
+    // document.getElementById("nextButton").style.display = "block";
+    setTimeout(function () {
+      navNext();
+    }, 1000);
   } else {
     formativeSpan.innerHTML = "⨉";
     formativeSpan.classList.remove("correctSpan");
     formativeSpan.classList.add("wrongSpan");
-    document.getElementById("formAns").innerHTML =
-      "Correct answer: Potential electrode";
-    document.getElementById("nextButton").style.display = "block";
+    correctAnsSpan.innerHTML = `Correct answer:${ans}`;
+    // document.getElementById("nextButton").style.display = "block";
+    setTimeout(function () {
+      navNext();
+    }, 1000);
   }
 }
 //-----------------------------------------blink arrow on the next step---------------------------------------------
@@ -231,7 +259,7 @@ function magic() {
     };
   } else if (simsubscreennum == 2) {
     if (repeat == 1) {
-      let popUp = document.querySelector(".pop-up");
+      let popUp = document.querySelectorAll(".pop-up")[0];
       popUp.style.display = "none";
     }
     document.getElementById("a6").style.display = "none";
@@ -253,6 +281,10 @@ function magic() {
       step2();
     };
   } else if (simsubscreennum == 3) {
+    if (repeat == 2) {
+      let popUp = document.querySelectorAll(".pop-up")[1];
+      popUp.style.display = "none";
+    }
     document.getElementById("b6").style.display = "none";
     document.getElementById("trial").style.display = "block";
 
@@ -274,6 +306,10 @@ function magic() {
       step3();
     };
   } else if (simsubscreennum == 4) {
+    if (repeat == 3) {
+      let popUp = document.querySelectorAll(".pop-up")[2];
+      popUp.style.display = "none";
+    }
     document.getElementById("c6").style.display = "none";
     document.getElementById("trial").style.display = "block";
 
@@ -325,7 +361,7 @@ function magic() {
     }
     document.getElementById(
       "meanResult"
-    ).innerHTML = `Mean Resistivity = ${average} Ω`;
+    ).innerHTML = `Mean Resistivity = ${average} Ω-m`;
   }
 }
 
@@ -344,9 +380,13 @@ function step1() {
     setTimeout(function () {
       document.getElementById("a5").style.display = "none";
       if (repeat == 1) {
-        let popUp = document.querySelector(".pop-up");
+        let popUp = document.querySelectorAll(".pop-up")[0];
         popUp.style.display = "block";
-      } else document.getElementById("nextButton").style.display = "block";
+      } else {
+        // document.getElementById("nextButton").style.display = "block";
+        console.log(1);
+        navNext();
+      }
     }, 1000);
   }, 1000);
 }
@@ -366,7 +406,15 @@ function step2() {
     //document.getElementById("b24").style.transform = "rotate(15deg)";
     setTimeout(function () {
       document.getElementById("b5").style.display = "none";
-      document.getElementById("nextButton").style.display = "block";
+      // document.getElementById("nextButton").style.display = "block";
+      if (repeat == 2) {
+        let popUp = document.querySelectorAll(".pop-up")[1];
+        popUp.style.display = "block";
+      } else {
+        // document.getElementById("nextButton").style.display = "block";
+        console.log(1);
+        navNext();
+      }
     }, 1000);
   }, 1000);
 }
@@ -385,7 +433,14 @@ function step3() {
     document.getElementById("csoil4").style.display = "none";
     setTimeout(function () {
       document.getElementById("c5").style.display = "none";
-      document.getElementById("nextButton").style.display = "block";
+      if (repeat == 3) {
+        let popUp = document.querySelectorAll(".pop-up")[2];
+        popUp.style.display = "block";
+      } else {
+        // document.getElementById("nextButton").style.display = "block";
+        console.log(1);
+        navNext();
+      }
     }, 1000);
   }, 1000);
 }
@@ -403,7 +458,7 @@ function step4() {
     document.getElementById("csoil6").style.display = "none";
     setTimeout(function () {
       document.getElementById("d5").style.display = "none";
-
+      // navNext();
       document.getElementById("nextButton").style.display = "block";
     }, 1000);
   }, 1000);
@@ -455,7 +510,6 @@ function normalImg(x) {
 
 function displayData() {
   let tableHead = document.getElementById("thead2");
-  tableHead.classList.add("bold-text");
   let thead = tableHead.insertRow(0);
   for (let i = 0; i < header2.length; i++) {
     thead.insertCell(i).innerHTML = header2[i];
@@ -494,7 +548,6 @@ let interval = 600;
 let increment = 0;
 function generate_table() {
   let tableHead = document.getElementById("thead1");
-  tableHead.classList.add("bold-text");
   let thead = tableHead.insertRow(0);
   for (let i = 0; i < header1.length; i++) {
     thead.insertCell(i).innerHTML = header1[i];
@@ -518,7 +571,7 @@ function eachRow(rows, row) {
     rows.insertCell(i).innerHTML = row[i];
   }
   document.getElementById("file").value = step;
-  step += Math.floor(100 / data.length + 2);
+  step += Math.floor(100 / data.length) + 1;
 }
 
 function showNextButton(visibility) {
@@ -621,7 +674,7 @@ function appendSpan(val, ohm = false) {
     span.innerHTML = val ? "✔" : "⨉";
     span.classList.add(val ? "correctSpan" : "wrongSpan");
   } else {
-    span.innerHTML = "Ω";
+    span.innerHTML = "Ω-m";
   }
   return span;
 }
