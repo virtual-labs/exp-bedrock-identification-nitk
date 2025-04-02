@@ -17,7 +17,6 @@
       <li>Shwetha | NITK</li>
       <li>Dr. Vyshali | NITK</li>
       <li>Ashika Pai | NITK</li>
-      <li>Anusha B Salian | NITK</li>
     </ul></td>
   </tr>
 </table>
