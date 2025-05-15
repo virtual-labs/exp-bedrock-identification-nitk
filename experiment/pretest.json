@@ -117,19 +117,6 @@
       "difficulty": ""
     },
     {
-      "question": "Ohm's law states that the current through a conductor between two points is inversely proportional to the voltage across the two points.",
-      "answers": {
-        "a": "True",
-        "b": "False"
-      },
-      "explanations": {
-        "a": "",
-        "b": ""
-      },
-      "correctAnswer": "b",
-      "difficulty": ""
-    },
-    {
       "question": "The positive terminal of the battery is known as",
       "answers": {
         "a": "Anode",
