@@ -10,30 +10,30 @@
         "d": "Schlumberger Array"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Wenner Array- Its configuration is equal spacing between all electrodes (AB = MN = spacing). It is used for  good signal strength, simple to use, good for 1D profiling. This is applicable for  Vertical electrical sounding (VES) and profiling.",
+        "b": "Pole- Dipole Array-Its Configuration is one current or potential electrode placed at infinity. It is an Asymmetrical array which provides good horizontal resolution. It is used in 2D/3D resistivity imaging.",
+        "c": "Dipole-Wenner Array: In electrical resistivity surveys, electrode array geometries refer to the specific arrangements of current and potential electrodes on the ground surface. These configurations influence the depth of investigation and the resolution of the subsurface imaging.",
+        "d": "Schlumberger Array: Its Configuration is Current electrodes are spread wider than the potential electrodes (AB >> MN). It is efficient for vertical sounding with less movement of potential electrodes. This configuration is used for vertical electrical sounding (VES) with deeper penetration."
       },
       "correctAnswer": "c",
-      "difficulty": ""
+      "difficulty": "beginner"
     },
     {
-      "question": "The unit of percolation rate of the soil is __________.",
+      "question": "What does a geo-resistivity test aim to determine about bedrock?",
       "answers": {
-        "a": "Unitless",
-        "b": "g/cc",
-        "c": "ml/s",
-        "d": "cm/s"
+        "a": "The exact chemical composition of the bedrock",
+        "b": "The depth and layering of different subsurface materials, including bedrock",
+        "c": "The age of the bedrock",
+        "d": "The temperature of the bedrock"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Chemical analysis requires laboratory testing, not geophysical surveys.",
+        "b": "The geo-resistivity test, also known as electrical resistivity surveying, is a geophysical method primarily used to investigate subsurface features by measuring the electrical resistivity of earth materials.",
+        "c": "Requires radiometric dating or fossil analysis, not resistivity testing.",
+        "d": "Requires thermal logging or thermocouple measurements, not resistivity methods."
       },
       "correctAnswer": "b",
-      "difficulty": ""
+      "difficulty": "advanced"
     },
     {
       "question": "Which IS code is used in this experiment?",
@@ -44,13 +44,13 @@
         "d": "IS 15658:2006"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "It is IS code for  Methods of Sampling and Analysis of Concrete and not related to resistivity or subsurface investigations.",
+        "b": "This is Code of Practice for Electrical Resistivity Survey for Civil Engineering Purposes. This IS code provides guidelines for conducting geo-electrical resistivity tests, including methods used to identify bedrock, groundwater levels, and subsurface layering. This is the correct and relevant IS code for geo-resistivity tests in civil engineering applications.",
+        "c": "General Construction in Steel - Code of Practice and deals with structural steel design, not geophysical testing.",
+        "d": "It is for Precast Concrete Blocks for Paving - Specification and  relevant to pavement construction materials, not geophysical surveys."
       },
       "correctAnswer": "b",
-      "difficulty": ""
+      "difficulty": "advanced"
     },
     {
       "question": "The ground resistivity calculated from measured resistance and a geometric factor derived for the condition where the ground is homogeneous and isotropic is",
@@ -61,13 +61,13 @@
         "d": "Apparent Resistivity"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "General term; not specific to what is measured with assumptions.",
+        "b": "The actual resistivity of a specific layer in the ground. It is derived after inversion or interpretation of apparent resistivity data.",
+        "c": "A technique used to produce 2D or 3D images using many apparent resistivity measurements, not a direct value.",
+        "d": "It is the resistivity calculated from the measured resistance and a geometric factor (K) that depends on the electrode configuration (Wenner, Schlumberger, etc.)."
       },
       "correctAnswer": "d",
-      "difficulty": ""
+      "difficulty": "intermediate"
     },
     {
       "question": "Which type of rock has the highest resistivity?",
@@ -78,77 +78,13 @@
         "d": "None of the above"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
+        "a": "Igneous rocks typically have the highest resistivity values because they are composed of tightly interlocked crystals with low porosity and permeability, resulting in minimal water content; for example, dry granite can exhibit resistivity in the range of 10<sup>⁴</sup> to 10<sup>⁸</sup> ohm-m, although this may decrease if the rock becomes fractured or weathered and water infiltrates the cracks.",
+        "b": "Sedimentary rocks such as sandstone, shale, and limestone generally exhibit low to moderate resistivity because their high porosity allows greater water retention, and the presence of water—especially if saline—further reduces resistivity; shales, in particular, are highly conductive due to their clay mineral content.",
+        "c": "Metamorphic rocks exhibit a wide range of resistivity values depending on mineral alignment and the degree of foliation, generally showing moderate to high resistivity that is often lower than igneous rocks due to the presence of water in fractures or along foliation planes.",
         "d": ""
       },
       "correctAnswer": "a",
-      "difficulty": ""
-    },
-    {
-      "question": "Which type of rocks has the lowest resistivity?",
-      "answers": {
-        "a": "Igneous rocks",
-        "b": "Sedimentary rocks",
-        "c": "Metamorphic rocks",
-        "d": "None of the above"
-      },
-      "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
-      },
-      "correctAnswer": "b",
-      "difficulty": ""
-    },
-    {
-      "question": "In the Schlumberger array, the electrodes are placed at equal distances?",
-      "answers": {
-        "a": "True",
-        "b": "False"
-      },
-      "explanations": {
-        "a": "",
-        "b": ""
-      },
-      "correctAnswer": "b",
-      "difficulty": ""
-    },
-    {
-      "question": "The positive terminal of the battery is known as",
-      "answers": {
-        "a": "Anode",
-        "b": "Cathode",
-        "c": "Electrode",
-        "d": "None of the above"
-      },
-      "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
-      },
-      "correctAnswer": "a",
-      "difficulty": ""
-    },
-    {
-      "question": "The negative terminal of the battery is known as",
-      "answers": {
-        "a": "Anode",
-        "b": "Cathode",
-        "c": "Electrode",
-        "d": "None of the above"
-      },
-      "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
-      },
-      "correctAnswer": "b",
-      "difficulty": ""
+      "difficulty": "advanced"
     }
   ]
 }

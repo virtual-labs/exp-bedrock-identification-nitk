@@ -1,19 +1,49 @@
-### INTRODUCTION<br>
+### INTRODUCTION
 
-<p style="text-indent:50px;text-align:justify;"> The electrical resistivity test is useful for studying the existence of subsurface structures by observing the differences in their resistance to electrical current flow and hence determining the presence of groundwater. The objectives of this approach in the field of groundwater exploration is to identify groundwater bearing rocks,  the thickness and lateral extent of the aquifers, to estimate the depth to the water table, the delineation of the wetlands, the depth to the bedrock, structures and stratigraphic conditions such as fractures, dykes, etc., distribution and configuration of saltwater/freshwater interface, etc.
+<p style="text-indent:50px;text-align:justify;">The electrical resistivity test is a useful technique for investigating subsurface structures by analyzing variations in their resistance to the flow of electric current, thereby aiding in the identification of groundwater.</p>
+
+<p>The primary objectives of this method in groundwater exploration include:</p>
+
+- Identification of groundwater-bearing formations
+- Determination of the thickness and lateral extent of aquifers
+- Estimation of the depth to the water table
+- Delineation of wetlands
+- Determination of the depth to bedrock
+- Identification of subsurface structures and stratigraphic conditions such as fractures and dykes
+- Assessment of the distribution and configuration of the saltwater–freshwater interface
+
+<p>Thus, the electrical resistivity method serves as an important tool for understanding subsurface geological and hydrogeological conditions.
 </p>
 
-<p style="text-indent:50px;text-align:justify">Resistivity values of rocks are controlled by the chemical composition of the minerals, density, porosity, water content, water quality and temperature.
-In general, the distance between the current electrodes is proportional to the depth of the sample. (In general, the depth of the soil sample  is one-third to the distance between electrodes).
+<p style="text-indent:50px;text-align:justify">The resistivity values of rocks are governed by several factors, including the chemical composition of minerals, density, porosity, water content, water quality, and temperature. In general, the distance between the current electrodes is proportional to the depth of investigation. Typically, the effective depth of the soil sample is approximately one-third of the distance between the electrodes.
 </p>
 
-<p style="text-indent:50px;text-align:justify">The working principle of geoelectric is to inject electrical current into the earth. The electrode consists of two current electrodes (C<sub>1</sub> and C<sub>2</sub>) that deliver the electric current, and two potential electrodes reading the potential difference value after the current through the rocks (P<sub>1</sub> and P<sub>2</sub>). The four electrodes are plugged into the ground at a certain distance. The longer the distance of the current electrode will cause the flow of electric current to penetrate deeper rock layers. With the flow of electric current, it will cause an electrical voltage in the ground. Electrical voltage occurring at the ground surface is measured using a multimeter connected via two voltage electrode P<sub>1</sub> and P<sub>2</sub>, which is shorter than the distance of C<sub>1</sub>-C<sub>2</sub> electrode. When the position of the electrode distance of the current is changed to be higher than the electric voltage, potential electrode also changes according to the information of the type of rock that participates in the injection of electric currents at a greater depth.</p>
+<p style="text-indent:50px;text-align:justify">The geoelectrical method operates on the principle of injecting electrical current into the ground. The electrode system consists of two current electrodes (C<sub>1</sub> and C<sub>2</sub>) that introduce the electric current into the subsurface, and two potential electrodes (P<sub>1</sub> and P<sub>2</sub>) that measure the resulting potential difference after the current passes through the soil and rock layers.</p>
+
+<p style="text-indent:50px;text-align:justify">These four electrodes are inserted into the ground at specified distances. Increasing the spacing between the current electrodes allows the electric current to penetrate deeper into the subsurface layers. As the current flows through the ground, it generates an electrical potential. This potential difference at the surface is measured using a multimeter connected to the potential electrodes (P<sub>1</sub>and P<sub>2</sub>), which are placed at a smaller compared to the current electrodes (C<sub>1</sub>–C<sub>2</sub>).</p>
+
+<p style="text-indent:50px;text-align:justify">When the spacing between the current electrodes is increased, the depth of current penetration also increases. Consequently, the measured potential difference changes in response to the properties of the subsurface materials, providing information about the type of rock and its characteristics at greater depths.</p>
 
 
-<p style="text-indent:50px;text-align:justify">Measurements for resistivity surveys are made by the streaming current into the ground through two electrode type (potential electrode and current electrode) and measuring the resulting voltage difference across two potential electrodes. In its most basic form, the resistivity meter has a current source and voltage measurement circuit connected by cable to a minimum of four electrodes. The primary data obtained from the resistivity survey is current (I) injected into the ground, the position of the potential electrode and current,  and the resulting voltage difference (V) between the potential electrodes.
+<p style="text-indent:50px;text-align:justify">Measurements in resistivity surveys are carried out by injecting electric current into the ground through two current electrodes and measuring the resulting voltage difference across two potential electrodes. In its simplest form, a resistivity meter consists of a current source and a voltage-measuring circuit, connected by cables to a minimum of four electrodes.</p>
 
-<p style="text-indent:50px;text-align:justify">Current and voltage measurements are then converted into apparent resistance (a) of clear values using the following formula </p>
+<p>The primary data obtained from a resistivity survey include:</p>
 
-<p style="text-indent:50px;text-align:justify">where k is a geometric factor that depends on the configuration of current and potential electrodes. Since the subsurface is heterogeneous under normal conditions, the resistivity measured is a weighted mean of the resistivity of all the individual rock material bodies that make up the earth and is termed as "apparent resistivity".</p>
+- The electric current (I) injected into the ground
+- The positions of the current and potential electrodes
+- The resulting voltage difference (V) measured between the potential electrodes
 
-<p style="text-indent:50px;text-align:justify">Several electrode configurations are available viz., Wenner array, Schlumberger array, tri-electrode array, dipole-dipole array etc. The Schlumberger and Wenner arrays are used for shallow investigations. Dipole systems are usually employed for deeper studies. However, Schlumberger electrode configuration has been employed in the present investigation because of its advantages over other methods both in the field survey as well as in the interpretation of data. </p>
+<p>These measurements are used to determine the apparent resistivity of the subsurface.</p>
+
+<p style="text-align:justify">The measured current and voltage values are converted into apparent resistance using the following euation: </p>
+
+
+
+# Equation MISSING
+
+
+<p style="text-indent:50px;text-align:justify">The geometric factor k depends on the configuration and spacing of the current and potential electrodes. Since the subsurface is generally heterogeneous, the measured resistivity represents a weighted average of the resistivities of the different rock materials present. Therefore, the value obtained is referred to as the apparent resistivity.</p>
+
+<p style="text-indent:50px;text-align:justify">Several electrode configurations are commonly used in resistivity surveys, including the Wenner array, Schlumberger array, tri-electrode array, and dipole–dipole array.</p>
+
+<p style="text-indent:50px;text-align:justify">The Wenner and Schlumberger arrays are generally employed for shallow investigations, whereas dipole systems are typically used for deeper studies. However, the Schlumberger electrode configuration is often preferred due to its advantages in both field surveying and data interpretation.</p>
