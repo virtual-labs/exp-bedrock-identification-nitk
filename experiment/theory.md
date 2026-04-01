@@ -35,12 +35,16 @@
 
 <p>These measurements are used to determine the apparent resistivity of the subsurface.</p>
 
-<p style="text-align:justify">The measured current and voltage values are converted into apparent resistance using the following euation: </p>
+<p style="text-align:justify">From these measurements, the apparent resistivity (ρₐ) of the subsurface can be calculated using the equation:</p>
 
 
+<center><img src="images/eqn1.png"/></center>
 
-# Equation MISSING
-
+Where,</br>
+ρₐ = apparent resistivity (ohm-meters)</br>
+V = measured potential difference (volts)</br>
+I = current (amperes)</br>
+k = geometric factor, which depends on the electrode configuration and spacing
 
 <p style="text-indent:50px;text-align:justify">The geometric factor k depends on the configuration and spacing of the current and potential electrodes. Since the subsurface is generally heterogeneous, the measured resistivity represents a weighted average of the resistivities of the different rock materials present. Therefore, the value obtained is referred to as the apparent resistivity.</p>
 
