@@ -2,38 +2,89 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Which of the following is NOT an Electronic array Geometry?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Wenner Array",
+        "b": "Pole- Dipole Array",
+        "c": "Dipole-Wenner Array",
+        "d": "Schlumberger Array"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Wenner Array- Its configuration is equal spacing between all electrodes (AB = MN = spacing). It is used for  good signal strength, simple to use, good for 1D profiling. This is applicable for  Vertical electrical sounding (VES) and profiling.",
+        "b": "Pole- Dipole Array-Its Configuration is one current or potential electrode placed at infinity. It is an Asymmetrical array which provides good horizontal resolution. It is used in 2D/3D resistivity imaging.",
+        "c": "Dipole-Wenner Array: In electrical resistivity surveys, electrode array geometries refer to the specific arrangements of current and potential electrodes on the ground surface. These configurations influence the depth of investigation and the resolution of the subsurface imaging.",
+        "d": "Schlumberger Array: Its Configuration is Current electrodes are spread wider than the potential electrodes (AB >> MN). It is efficient for vertical sounding with less movement of potential electrodes. This configuration is used for vertical electrical sounding (VES) with deeper penetration."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+    {
+      "question": "What does a geo-resistivity test aim to determine about bedrock?",
+      "answers": {
+        "a": "The exact chemical composition of the bedrock",
+        "b": "The depth and layering of different subsurface materials, including bedrock",
+        "c": "The age of the bedrock",
+        "d": "The temperature of the bedrock"
+      },
+      "explanations": {
+        "a": "Chemical analysis requires laboratory testing, not geophysical surveys.",
+        "b": "The geo-resistivity test, also known as electrical resistivity surveying, is a geophysical method primarily used to investigate subsurface features by measuring the electrical resistivity of earth materials.",
+        "c": "Requires radiometric dating or fossil analysis, not resistivity testing.",
+        "d": "Requires thermal logging or thermocouple measurements, not resistivity methods."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Which IS code is used in this experiment?",
+      "answers": {
+        "a": "IS 1199:1959",
+        "b": "IS 15736:2007",
+        "c": "IS 800:2007",
+        "d": "IS 15658:2006"
+      },
+      "explanations": {
+        "a": "It is IS code for  Methods of Sampling and Analysis of Concrete and not related to resistivity or subsurface investigations.",
+        "b": "This is Code of Practice for Electrical Resistivity Survey for Civil Engineering Purposes. This IS code provides guidelines for conducting geo-electrical resistivity tests, including methods used to identify bedrock, groundwater levels, and subsurface layering. This is the correct and relevant IS code for geo-resistivity tests in civil engineering applications.",
+        "c": "General Construction in Steel - Code of Practice and deals with structural steel design, not geophysical testing.",
+        "d": "It is for Precast Concrete Blocks for Paving - Specification and  relevant to pavement construction materials, not geophysical surveys."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "The ground resistivity calculated from measured resistance and a geometric factor derived for the condition where the ground is homogeneous and isotropic is",
+      "answers": {
+        "a": "Resistivity",
+        "b": "True Resistivity",
+        "c": "Resistivity imaging",
+        "d": "Apparent Resistivity"
+      },
+      "explanations": {
+        "a": "General term; not specific to what is measured with assumptions.",
+        "b": "The actual resistivity of a specific layer in the ground. It is derived after inversion or interpretation of apparent resistivity data.",
+        "c": "A technique used to produce 2D or 3D images using many apparent resistivity measurements, not a direct value.",
+        "d": "It is the resistivity calculated from the measured resistance and a geometric factor (K) that depends on the electrode configuration (Wenner, Schlumberger, etc.)."
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which type of rock has the highest resistivity?",
+      "answers": {
+        "a": "Igneous rocks",
+        "b": "Sedimentary rocks",
+        "c": "Metamorphic rocks",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "Igneous rocks typically have the highest resistivity values because they are composed of tightly interlocked crystals with low porosity and permeability, resulting in minimal water content; for example, dry granite can exhibit resistivity in the range of 10<sup>⁴</sup> to 10<sup>⁸</sup> ohm-m, although this may decrease if the rock becomes fractured or weathered and water infiltrates the cracks.",
+        "b": "Sedimentary rocks such as sandstone, shale, and limestone generally exhibit low to moderate resistivity because their high porosity allows greater water retention, and the presence of water—especially if saline—further reduces resistivity; shales, in particular, are highly conductive due to their clay mineral content.",
+        "c": "Metamorphic rocks exhibit a wide range of resistivity values depending on mineral alignment and the degree of foliation, generally showing moderate to high resistivity that is often lower than igneous rocks due to the presence of water in fractures or along foliation planes.",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
     }
   ]
 }

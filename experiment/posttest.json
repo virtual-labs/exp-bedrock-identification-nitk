@@ -2,38 +2,89 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "In a geo-resistivity survey, what does 'apparent resistivity' refer to?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "The true resistivity of a specific material",
+        "b": "The measured resistivity, which is an average value influenced by multiple subsurface layers",
+        "c": "The resistivity of the electrodes used in the survey",
+        "d": "The resistivity of the air"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "True resistivity requires interpretation and modeling of apparent resistivity data.",
+        "b": "In a geo-resistivity survey, apparent resistivity (ρₐ) refers to the calculated resistivity based on the measured voltage and current, assuming the subsurface is uniform, which it rarely is.",
+        "c": "The electrodes are conductors; their resistivity is not what is measured.",
+        "d": "Air has very high resistivity and does not conduct current into the ground"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Which of the following factors can affect the results of a geo-resistivity survey?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Electrode spacing and configuration",
+        "b": "Ground moisture content",
+        "c": "Type of bedrock",
+        "d": "All of the above"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Electrode spacing controls the depth of investigation larger spacing allows the electrical current to penetrate deeper layers while the configuration affects the resolution and sensitivity, with common arrays like Wenner, Schlumberger, and Dipole-Dipole each offering specific advantages for vertical or lateral resolution; therefore, the electrode layout plays a crucial role in determining the quality and accuracy of the survey data.",
+        "b": "Water present in soil or rock pores enhances electrical conductivity, meaning that higher moisture content especially when the water is saline leads to lower resistivity, and seasonal variations in moisture, such as after rainfall, can significantly alter resistivity readings in a geo-resistivity survey.",
+        "c": "Different rock types have inherently different resistivity values—for example, igneous rocks typically exhibit high resistivity, sedimentary rocks show low to moderate resistivity, and fractured or weathered bedrock tends to have lower resistivity due to water infiltration thus, the presence and condition of bedrock can create significant contrasts in resistivity profiles during a survey.",
+        "d": "All the listed factors—electrode configuration, ground moisture content, and the type and condition of underlying rock—can significantly influence the accuracy, resolution, and interpretability of results obtained from a geo-resistivity survey."
+      },
+      "correctAnswer": "d",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Which of the following is a limitation of using geo-resistivity surveys for bedrock identification?",
+      "answers": {
+        "a": "They are only effective in areas with high water content",
+        "b": "They are not suitable for identifying bedrock layers with varying lithologies",
+        "c": "They can be affected by near-surface geological features like topsoil and weathered material",
+        "d": "They are highly expensive and time-consuming"
+      },
+      "explanations": {
+        "a": "Resistivity surveys work in both dry and wet conditions; in fact, high water content may reduce resolution due to lower resistivity contrast.",
+        "b": "Resistivity surveys can detect variations in lithology, especially when there are significant resistivity contrasts.",
+        "c": "Near-surface layers such as topsoil, clay, or weathered rock often exhibit low resistivity due to high moisture content or the presence of conductive clay minerals. These layers can mask or distort the electrical signal from deeper, resistive bedrock, potentially leading to inaccurate estimation of bedrock depth or failure to detect it altogether. This can result in interpretation challenges such as equivalence and suppression, where different subsurface conditions produce similar resistivity curves, making accurate distinction difficult.",
+        "d": "Compared to methods like drilling or seismic reflection, resistivity surveys are relatively low-cost and efficient for preliminary investigations."
       },
       "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What type of material generally exhibits the highest resistivity in a geo-resistivity survey?",
+      "answers": {
+        "a": "Saturated clay",
+        "b": "Fresh water",
+        "c": "Granite bedrock",
+        "d": "Silt and sand "
+      },
+      "explanations": {
+        "a": "Clays have low resistivity because they contain ion-rich water and exchangeable cations, which make them highly conductive.",
+        "b": "Natural freshwater has moderate resistivity; although pure water is a poor conductor, the presence of dissolved salts makes it more conductive than highly resistive rocks like granite.",
+        "c": "Granite exhibits high resistivity because it is an igneous rock with low porosity and minimal water content, especially when unfractured; its resistivity typically ranges from 10<sup>⁴</sup> to 10<sup>⁸</sup> ohm-m, making it one of the most resistive natural materials in the subsurface.",
+        "d": "These materials have low to moderate resistivity because their porous and moisture-retaining nature reduces resistivity, particularly when the retained water is saline."
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What is the primary principle behind geo-resistivity surveys for bedrock identification?",
+      "answers": {
+        "a": "Measuring the speed of seismic waves through the earth",
+        "b": "Measuring the electrical resistance of different earth materials",
+        "c": "Measuring the magnetic susceptibility of rocks: This is used in magnetic surveys, typically for detecting mineral deposits or geologic structures.",
+        "d": "Measuring the gravitational pull of different subsurface layers: This applies to gravity surveys, which detect density variations in the subsurface."
+      },
+      "explanations": {
+        "a": "This is the basis for seismic surveys, not resistivity surveys.",
+        "b": "The geo-resistivity survey is based on the principle of measuring the electrical resistance (or resistivity) of subsurface materials to determine the structure and composition of the underground layers, including identifying the bedrock.",
+        "c": "Measuring the magnetic susceptibility of rocks: This is used in magnetic surveys, typically for detecting mineral deposits or geologic structures.",
+        "d": "Measuring the gravitational pull of different subsurface layers: This applies to gravity surveys, which detect density variations in the subsurface."
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
-  ]
+   ]
 }
